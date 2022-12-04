@@ -25,7 +25,7 @@
 }
 
 .anticon svg {
-  display: auto Imo !important;
+  display: flex;
 }
 
 .boxed {
