@@ -9,6 +9,9 @@ import { useRouter } from "next/dist/client/router";
 import logo from "../assets/human1.png";
 
 const CHECKLIST_ITEMS = [
+    "Maintain relationships with your peers even after your classes end",
+    "Connect with industry professionals who can provide guidance and mentorship",
+    "Create a personalized career plan that you can carry with you throughout your career",
 ];
 
 function Home(props) {
@@ -23,9 +26,10 @@ function Home(props) {
         <Col span={12}>
           <div className="hero-slogan-section">
             <div className="hero-slogan">
-              <p>
-                {APP_DESC}.<br/>
-              </p>
+              <h5>
+                {APP_DESC}.
+              </h5>
+              <br/>
             </div>
             {/* // "#eb2f96" */}
             {CHECKLIST_ITEMS.map((item, i) => {
@@ -40,7 +44,7 @@ function Home(props) {
             <br />
 
             <Button type="primary" size="large" onClick={goToLogin}>
-                Get Started
+                Create your profile
             </Button>
           </div>
         </Col>

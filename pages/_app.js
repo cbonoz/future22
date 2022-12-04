@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { APP_DESC, APP_NAME } from "util/constants";
 import Head from "next/head";
 import Image from "next/image"
-import { FormOutlined, QuestionCircleOutlined } from '@ant-design/icons';
+import { FormOutlined, UserOutlined, SearchOutlined, GlobalOutlined, QuestionCircleOutlined } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu } from 'antd';
 const { Header, Content, Footer } = Layout;
 
@@ -39,15 +39,15 @@ function MyApp({ Component, pageProps }) {
           </Menu.Item>
           <>
             <Menu.Item key={'/manage'} onClick={() => navigate("/manage")}>
-              <FormOutlined /> Manage Students
+              <UserOutlined /> Manage Students
             </Menu.Item>
 
             <Menu.Item key={'/connect'} onClick={() => navigate("/connect")}>
-              <FormOutlined /> Connect
+              <GlobalOutlined /> Connect
             </Menu.Item>
 
             <Menu.Item key={'/resources'} onClick={() => navigate("/resources")}>
-              <FormOutlined /> Resources
+              <SearchOutlined /> Resources
             </Menu.Item>
 
             <Menu.Item key={'/about'} onClick={() => navigate("/about")}>
@@ -57,13 +57,45 @@ function MyApp({ Component, pageProps }) {
         </Menu>
       </Header>
       <Content>
-        <div className="container">
+        <div className="main-container">
           <Component {...pageProps} />
         </div>
       </Content>
 
       <Footer style={{ textAlign: "center" }}>
-        {APP_NAME} ©2022
+        {/* <footer class="bg-gray-100 text-center lg:text-left">
+          <div class="container p-6 text-gray-800">
+            <div class="grid lg:grid-cols-2 gap-4">
+              <div class="mb-6 md:mb-0">
+                <h5 class="font-medium mb-2 uppercase">Footer text</h5>
+
+                <p class="mb-4">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                  molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                  aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                </p>
+              </div>
+
+              <div class="mb-6 md:mb-0">
+                <h5 class="font-medium mb-2 uppercase">Footer text</h5>
+
+                <p class="mb-4">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                  molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                  aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center text-gray-700 p-4" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+            {APP_NAME} ©2022
+          </div>
+        </footer> */}
+
+        <div>
+          {APP_NAME} ©2022
+        </div>
       </Footer>
     </Layout>
   </div>

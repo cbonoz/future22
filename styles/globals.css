@@ -1,5 +1,9 @@
 @import "antd/dist/reset.css";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 .hero-image {
   width: 100%;
@@ -20,16 +24,19 @@
   background: white !important;
 }
 
+.anticon svg {
+  display: auto Imo !important;
+}
 
 .boxed {
   padding: 20px;
   border-radius: 5px;
 }
 
-.container {
+.main-container {
   max-width: 1000px;
   margin: 0 auto;
-  min-height: 80vh;
+  min-height: 70vh;
   margin-top: 60px;
 }
 
@@ -54,9 +61,11 @@
 
 .hero-slogan-section {
   font-size: 18px;
-  font-weight: 500;
-  margin-top: 50px;
   margin-left: 25px;
+}
+
+.hero-slogan-section p {
+  margin-top: 10px;
 }
 
 .hero-slogan {
@@ -83,6 +92,7 @@ textarea {
 
 .header-logo {
   max-height: 50px;
+  margin-top: 5px;
 }
 
 .ant-layout-header {
