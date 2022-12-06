@@ -98,3 +98,7 @@ textarea {
 .ant-layout-header {
   background: white;
 }
+
+/* button, [type='button'], [type='reset'], [type='submit'] {
+  background-color: auto !important;
+} */
