@@ -11,6 +11,8 @@ Bridge from adult learner to the top of your field.
 
 Proposal submission to the <a href="https://www.luminarylightbox.com/FutureFinderChallenge/" target="_blank">FutureFinder 2022 Challenge</a>
 
+<p><b>Note this project is currently an incomplete mockup/prototype and would require additional work to be production ready.</b></p>
+
 ## Motivation
 
 The team has completed a thorough review literature on adult learning to ensure that CareerBridge is best positioned to support adult learners’ career advancement. Beginning with a market analysis, we were able to identify gaps in the offering of tools that are currently available to support adult learners. We found that many tools exist to connect learners with adult education programs, but very few were focused on supporting adult learners after they completed coursework. Furthermore, we were not able to find any tools that fostered a continued connection between the cohort of adult educators and students who had just finished the same class or program. We believe this network is crucial as this cohort will likely engage in similar career navigation pathways and can act as a support network throughout the process. 
@@ -25,6 +27,18 @@ With one of our teammates coming from a background in K–12 education technolog
 CareerBridge is intended to bridge the gap between adult education programs and adult learners' job search and career advancement opportunities. This program supports adult educators in facilitating a network between the cohort of adult students who have just completed their course or program. This program is developed to act as a bulletin board where students and teachers can post relevant resources, questions, and tips as they navigate the next step in their careers. For this reason, CareerBridge can be easily used to support learners in any adult education program. 
 
 By creating an online community for adult learners who have just finished the same class or program, students are able to remain connected with their peers and educators supporting each other as they navigate the next step in their careers. CareerBridge allows classmates to “crowdsource” answers to questions and helpful resources as they begin their job search or career advancement opportunities at their current place of work. Educators and students can share what has (or hasn’t) worked in interviews and applications, review each other’s resumes and cover letters, and share information about potential career opportunities. CareerBridge recognizes that knowledge is power, and the more adult learners and educators can share with each other the better equipped and more confident they will be as they work towards landing their next job. 
+
+### Screenshots
+
+
+#### Home page
+
+<img src="./img/home.png" width=800 />
+
+
+#### Onboarding wizard
+
+<img src="./img/onboard.png" width=800 />
 
 ## How to run
 
