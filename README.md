@@ -7,6 +7,8 @@
 CareerBridge
 ---
 
+CareerBridge is an adult learner pairing platform to improve accountability and outcomes
+
 Bridge from adult learner to the top of your field.
 
 Proposal submission to the <a href="https://www.luminarylightbox.com/FutureFinderChallenge/" target="_blank">FutureFinder 2022 Challenge</a>
