@@ -1,22 +1,25 @@
 {
-  "name": "hex-frontend",
+  "name": "careerbridge",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && next export && surge ./out -d careerbridge.surge.sh"
   },
   "dependencies": {
     "@babel/runtime": "^7.20.6",
     "antd": "^5.0.3",
     "axios": "^1.2.0",
+    "framer-motion": "^7.6.19",
     "next": "13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.4",
     "react-rotating-text": "^1.4.1",
+    "react-use-wizard": "^2.2.1",
     "typescript": "4.9.3"
   },
   "devDependencies": {

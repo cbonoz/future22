@@ -9,17 +9,21 @@ import { useRouter } from "next/dist/client/router";
 import logo from "../assets/human1.png";
 
 const CHECKLIST_ITEMS = [
-    "Maintain relationships with your peers even after your classes end",
-    "Connect with industry professionals who can provide guidance and mentorship",
+    "Match with a compatible learning partner to help you stay on track",
     "Create a personalized career plan that you can carry with you throughout your career",
+    "Hit Milestones and earn rewards along the way",
+    "Maintain relationships with your partner even after your classes end",
 ];
 
 function Home(props) {
   const router = useRouter()
 
   const goToLogin = () => {
-    router.push("/login");
+    alert('Coming soon!')
+    // TODO: Implement login
+    // router.push("/login");
   };
+
   return (
     <div className="hero-section">
       <Row>
@@ -34,7 +38,7 @@ function Home(props) {
             {/* // "#eb2f96" */}
             {CHECKLIST_ITEMS.map((item, i) => {
               return (
-                <p>
+                <p key={i}>
                   <CheckCircleTwoTone twoToneColor="#00aa00" />
                   &nbsp;
                   {item}
@@ -43,13 +47,13 @@ function Home(props) {
             })}
             <br />
 
-            <Button type="primary" size="large" onClick={goToLogin}>
-                Create your profile
+            <Button type="primary" size="large" onClick={() => router.push('/signup')}>
+                Create profile
             </Button>
           </div>
         </Col>
         <Col span={12}>
-          <Image fill src={logo} className="hero-image" />
+          <Image alt={"CareerBridge"} fill src={logo} className="hero-image" />
         </Col>
       </Row>
     </div>

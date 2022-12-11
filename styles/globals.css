@@ -1,9 +1,10 @@
-@import "antd/dist/reset.css";
 
-@tailwind base;
+
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
+@import "antd/dist/reset.css";
 
 .hero-image {
   width: 100%;
@@ -89,6 +90,10 @@ textarea {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
+/* button, [type='button'], [type='reset'], [type='submit'] {
+  background-color: #1890ff !important;
+} */
 
 .header-logo {
   max-height: 50px;

@@ -2,8 +2,9 @@ import { useRouter } from "next/router";
 import { APP_DESC, APP_NAME } from "util/constants";
 import Head from "next/head";
 import Image from "next/image"
-import { FormOutlined, UserOutlined, SearchOutlined, GlobalOutlined, QuestionCircleOutlined } from '@ant-design/icons';
-import { Breadcrumb, Layout, Menu } from 'antd';
+import { UserOutlined, SearchOutlined, GlobalOutlined, QuestionCircleOutlined } from '@ant-design/icons';
+import { useState } from "react";
+import { Avatar, Button, Layout, Menu } from 'antd';
 const { Header, Content, Footer } = Layout;
 
 import logo from 'assets/logo_trans.png';
@@ -12,6 +13,7 @@ import 'styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  const [user, setUser] = useState({})
   const navigate = (p) => router.push(p);
 
   const path = router.pathname;
@@ -38,7 +40,7 @@ function MyApp({ Component, pageProps }) {
             />
           </Menu.Item>
           <>
-            <Menu.Item key={'/manage'} onClick={() => navigate("/manage")}>
+            {/* <Menu.Item key={'/manage'} onClick={() => navigate("/manage")}>
               <UserOutlined /> Manage Students
             </Menu.Item>
 
@@ -48,11 +50,20 @@ function MyApp({ Component, pageProps }) {
 
             <Menu.Item key={'/resources'} onClick={() => navigate("/resources")}>
               <SearchOutlined /> Resources
-            </Menu.Item>
+            </Menu.Item> */}
 
             <Menu.Item key={'/about'} onClick={() => navigate("/about")}>
               <QuestionCircleOutlined /> About
             </Menu.Item>
+
+            <span style={{ marginLeft: '0' }}>
+                <span className="pointer">
+                  <Button type="primary" onClick={() => navigate("/signup")}>SignUp</Button>
+                  {/* <Avatar size="large" src={user.photoURL} /> */}
+                  {/* &nbsp;{user.displayName}&nbsp; */}
+                </span>
+              &nbsp;
+            </span>
           </>
         </Menu>
       </Header>

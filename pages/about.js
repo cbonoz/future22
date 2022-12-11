@@ -9,14 +9,15 @@ import logo from 'assets/logo_trans.png'
 
 const text = `
 
-CareerBridge provides:
+${APP_NAME} is a web application that helps students and recent graduates navigate their career paths. The app provides a platform for students to connect with industry professionals and other students, and to create a personalized career plan that they can carry with them throughout their careers.
 
-1. A personalized career assessment tool that helps learners identify their strengths, interests, and goals, and provides tailored recommendations for careers and education pathways that align with their unique profile.
-2. A career planning tool that helps learners create and manage a customized plan for their career development, including setting goals, tracking progress, and accessing resources and support.
-3. A network of industry professionals and experts who can provide guidance, advice, and mentorship to adult learners as they navigate their career journey.
-4. A range of resources and support services, including access to career counseling, job placement assistance, and other resources that can help adult learners transition from education to the workforce.
-5. A platform to help adult learners connect with each other and share their experiences and insights as they navigate their career journey even after the classes end"
+What does ${APP_NAME} offer?
 
+Personalized learning: The app matches users with a compatible learning partner, allowing them to work together and support each other as they complete their education program.
+Career guidance: The app provides access to resources and tools that can help users understand their career options and make informed decisions about their future.
+Accountability: The app allows users to set goals, track progress, and receive feedback from their learning partner, providing the support and motivation they need to stay on track and achieve their goals.
+
+Create your profile today and start your journey to a successful career!
 `
 
 const About = () => {
@@ -27,7 +28,7 @@ const About = () => {
         <br/>
         <h1>About</h1>
         <ReactMarkdown>{text}</ReactMarkdown>
-        <a href="https://github.com/cbonoz/future22" target="_blank">Github</a>
+        <a rel="noreferrer" href="https://github.com/cbonoz/future22" target="_blank">Github</a>
         <p>
 
 </p>
