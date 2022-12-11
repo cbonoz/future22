@@ -1,13 +1,16 @@
+
 <br/>
+<br/>
+
 <p align='center'>
-    <img src="./assets/logo_trans.png">
+    <img src="./assets/logo_trans.png" width=400 />
 </p>
 <br/>
 
 CareerBridge
 ---
 
-CareerBridge is an adult learner pairing platform to improve accountability and outcomes
+CareerBridge is an adult learner pairing platform to improve accountability and outcomes.
 
 Bridge from adult learner to the top of your field.
 
