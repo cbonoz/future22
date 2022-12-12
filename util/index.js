@@ -1,3 +1,4 @@
+import path from "path";
 import { ACTIVE_CHAIN_ID } from "./constants";
 
 
@@ -24,6 +25,10 @@ export const getDateStringFromTimestamp = (ts, showTime) => {
   }
   return d.toLocaleDateString();
 };
+
+export const shouldHideNav = (pathname) => {
+  return pathname.startsWith("/signup") || pathname.startsWith("/login")
+}
 
 export const col = (k, render) => ({
   title: capitalize(k),

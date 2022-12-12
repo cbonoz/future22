@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image"
 import { UserOutlined, SearchOutlined, GlobalOutlined, QuestionCircleOutlined } from '@ant-design/icons';
 import { useState } from "react";
+import type { MenuProps } from 'antd';
 import { Avatar, Button, Layout, Menu } from 'antd';
 const { Header, Content, Footer } = Layout;
 
@@ -11,12 +12,39 @@ import logo from 'assets/logo_trans.png';
 
 import 'styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps}) {
   const router = useRouter();
   const [user, setUser] = useState({})
   const navigate = (p) => router.push(p);
 
   const path = router.pathname;
+
+  const menuItems: MenuProps['items'] = [
+    {
+      key: '/',
+      label: <Image
+        src={logo}
+        alt="CareerBridge Logo"
+        layout="responsive"
+        className="header-logo pointer"
+      />,
+      onClick: () => navigate("/")
+    },
+    {
+      key: '/about',
+      label: <>              <QuestionCircleOutlined /> About</>,
+      onClick: () => navigate("/about"),
+    },
+    {
+      key: '/signup',
+      label: <span style={{ marginLeft: '0' }}>
+        <span className="pointer">
+          <Button type="primary" onClick={() => navigate("/signup")}>SignUp</Button>
+        </span>
+        &nbsp;
+      </span>
+    }
+  ]
 
   return <div className="App">
     <Head>
@@ -29,16 +57,11 @@ function MyApp({ Component, pageProps }) {
         <Menu
           mode="horizontal"
           selectedKeys={[path]}
+          items={menuItems}
         >
-          <Menu.Item key={0}>
-            <Image
-              src={logo}
-              alt="CareerBridge Logo"
-              layout="responsive"
-              className="header-logo pointer"
-              onClick={() => navigate("/")}
-            />
-          </Menu.Item>
+          {/* <Menu.Item key={0}>
+
+          </Menu.Item> */}
           <>
             {/* <Menu.Item key={'/manage'} onClick={() => navigate("/manage")}>
               <UserOutlined /> Manage Students
@@ -52,18 +75,6 @@ function MyApp({ Component, pageProps }) {
               <SearchOutlined /> Resources
             </Menu.Item> */}
 
-            <Menu.Item key={'/about'} onClick={() => navigate("/about")}>
-              <QuestionCircleOutlined /> About
-            </Menu.Item>
-
-            <span style={{ marginLeft: '0' }}>
-                <span className="pointer">
-                  <Button type="primary" onClick={() => navigate("/signup")}>SignUp</Button>
-                  {/* <Avatar size="large" src={user.photoURL} /> */}
-                  {/* &nbsp;{user.displayName}&nbsp; */}
-                </span>
-              &nbsp;
-            </span>
           </>
         </Menu>
       </Header>
