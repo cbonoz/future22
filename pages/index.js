@@ -10,9 +10,8 @@ import logo from "../assets/human1.png";
 
 const CHECKLIST_ITEMS = [
     "Match with a compatible learning partner to help you stay on track",
-    "Create a personalized career plan that you can carry with you throughout your career",
-    "Hit Milestones and earn rewards along the way",
-    "Maintain relationships with your partner even after your classes end",
+    "Hit Milestones and earn rewards along the way to your career goal",
+    "Maintain a relationship with your learning partner even after classes end",
 ];
 
 function Home(props) {

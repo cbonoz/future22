@@ -1,10 +1,12 @@
 import { Button, Card, Radio, Select, Space, Input } from 'antd';
+import Image from 'next/image'
 
 const { TextArea } = Input;
 
 import React from 'react'
 import { useWizard, Wizard } from 'react-use-wizard';
 import { AnimatePresence } from 'framer-motion';
+import logo from 'assets/logo_trans.png';
 
 import { APP_NAME, ONBOARD_QUESTIONS } from '../util/constants';
 
@@ -96,10 +98,13 @@ export default function SignUp() {
     return (
         <div>
             <div className='heading-area centered'>
+                <Image width={200} autoSize src={logo} alt='CareerBridge' style={{ width: '200px' }} />
+                <br/>
+                <br/>
 
             <h1>Welcome to {APP_NAME}</h1>
             <br/>
-            <p>Complete the below questions to build your profile.</p>
+            <p>Complete the below questions to create your profile.</p>
             <br/>
             </div>
             <Wizard footer={<Footer />} wrapper={<AnimatePresence initial={false} exitBeforeEnter />}
